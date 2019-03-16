@@ -38,9 +38,10 @@ if (empty($error)){
     <meta charset="UTF-8">
     <title>registerform</title>
     <link rel="stylesheet" href="registerform.css">
+    <link rel="stylesheet" href="common.css">
 </head>
 <body>
-    <div class="registerform">
+    <div class="form">
     <h1>REGISTER FORM</h1>
     <form action="" method="post">
         <div class="box">

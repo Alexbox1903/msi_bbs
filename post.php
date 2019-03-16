@@ -12,7 +12,7 @@ if (!empty($_POST)){
     if ($_FILES['image']['size'] === 0){
         $error['image'] = 'blank';
     }
-
+    
     if (!empty($filename)){
         $mime = mime_content_type($_FILES['image']['tmp_name']);
         if ($mime != 'image/jpg' && $mime != 'image/jpeg' && $mime != 'image/gif' 
@@ -20,7 +20,7 @@ if (!empty($_POST)){
             $error['image'] = 'type';
         }
     }
-    
+
     if  (empty($error)){
         date_default_timezone_set('Asia/Tokyo');
         $image = date('YmdHis') . $filename;
@@ -28,7 +28,7 @@ if (!empty($_POST)){
     }
 
     if  (empty($error)){
-        $_SESSION['post'] = $_POST;
+        $_SESSION['post']['comment'] = $_POST['comment'];
         $_SESSION['post']['image'] = $image;
         
         header('Location: index.php');

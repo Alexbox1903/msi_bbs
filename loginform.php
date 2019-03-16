@@ -31,9 +31,10 @@ if (!empty($_POST)){
     <meta charset="UTF-8">
     <title>loginform</title>
     <link rel="stylesheet" href="loginform.css">
+    <link rel="stylesheet" href="common.css">
 </head>
 <body>
-    <div class="loginform">
+    <div class="form">
     <h1>LOGIN FORM</h1>
     <form action="" method="post">
         <div class="box">
