@@ -35,8 +35,11 @@ m.id=p.member_id ORDER BY p.created DESC');
 </head>
 <body>
     <h1>MOTOR SPORT IMAGE BBS</h1>
-    <button type="button" name="button" onclick="location.href='post.php'">
+    <button type="button" name="submit" onclick="location.href='post.php'">
         SUBMIT
+    </button>
+    <button type="button" name="logout" onclick="location.href='logout.php'">
+        LOGOUT
     </button>
 <?php foreach ($posts as $post): ?>
     <p><img src="member_image/<?php print(htmlspecialchars($post['image'], ENT_QUOTES));
